@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.fix-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header__content{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding:15px 30px;
+}
+
+.header__content--link a{
+    color: #000;
+}
+
+.header__content--link a:hover{
+    color: #635e5e;
+}
+
+.header__content--btn{
+    color: #fff;
+    background-color: #4285f4;
+    padding: 5px 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main{
+    min-height: 80vh;
+    position: relative;
+}
+
+.main__content{
+    position: absolute;
+    top:20%;
+    left: calc(50% - 300px);
+}
+.main__content--googleLogo,
+.main__content--searchLine{
+    display: flex;
+    justify-content: center;
+}
+
+.main__content--googleLogo--img{
+    max-width: 270px;
+}
+
+.main__content--searchLine {
+    margin: 40px 0 30px;
+}
+
+.main__content--searchLine:hover{
+    box-shadow: 0 0 7px #dddddd;
+    border-radius: 30px;
+}
+
+.main__content--searchLine--content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid #dddddd;
+    padding: 8px 0;
+    border-radius: 30px;
+    width: 600px;
+}
+
+.main__content--searchLine--content--input{
+    margin-left: 10px;
+    width: 70%;
+    border: 0;
+    outline: 0;
+}
+
+.main__content--searchLine--content--imgWrapper{
+    border:0;
+    background-color: transparent;
+}
+
+.main__content--searchLine--content--imgWrapper:focus{
+    outline: 0;
+}
+
+.main__content--searchLine--content--imgWrapper img{
+    width: 30px;
+    height: 30px;
+}
+
+.main__content--additionalBtns{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 30px;
+}
+
+
+.main__content--additionalBtns a{
+    color: #716d6d;
+    background-color: #f2f2f2;
+    padding: 8px 20px;
+    margin: 0 5px;
+}
+
+.main__content--additionalText{
+    text-align: center;
+}
+
+.footer__region,
+.footer__about{
+    padding: 10px;
+    background-color: #f2f2f2;
+    border: 1px solid #dddddd;
+    color: #7d7878;
+    font-size: 15px;
+}
+
+.footer__about{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__about--right a,
+.footer__about--left a{
+    color: #444242!important;
+}
